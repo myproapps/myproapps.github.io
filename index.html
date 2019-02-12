@@ -1,95 +1,304 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title>Paint X for Mac</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- meta data. -->
+<title>Paint X for Mac | Free Trial | The highest rated Microsoft® Paint replacement app for your Mac</title>
+<meta name="description" content="Paint X is the highest rated Microsoft® Paint replacement app for your Mac Book or iMac. You can use Paint X like a digital sketchpad to draw, color, edit pictures, make pictures and creative projects, or to add text and designs to other pictures. Download a free trial of Paint X now!" />
+
+<meta property="og:site_name" content="Paint X" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Paint X for Mac | Free Trial | The highest rated Microsoft® Paint replacement app for your Mac" />
+<meta property="og:description" content="Paint X is the highest rated Microsoft® Paint replacement app for your Mac Book or iMac. You can use Paint X like a digital sketchpad to draw, color, edit pictures, make pictures and creative projects, or to add text and designs to other pictures. Download a free trial of Paint X now!" />
+<meta property="og:image" content="https://paint-x.com/appres/og.png" />
 	
-	<!-- CSS -->
-	<style type="text/css">
-		html, body 
-		{
-			padding: 0px;
-			margin: 0px;
-			background-color: gray;
+<!-- icon -->
+<link rel="icon"          href="img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    
+<!-- css -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+	
+<!-- Define some functions here. -->
+<script type="text/javascript">
+	function toggleAllFeaturesContainer()
+	{
+		var arrowElem = document.getElementById('all_features_arrow');
+		var featuresElem = document.getElementById('all_features_contents_container');
+		if (featuresElem.className == "show_div") {
+			featuresElem.className = "hide_div";
+			arrowElem.innerHTML = "&gt;";
 		}
-
-		#main_div
-		{
-			width: 600px;
-			height: 400px;
-			margin-top: 100px;
-			margin-bottom: 40px;
-			margin-left: auto;
-			margin-right: auto;
-			background-color: #000;
-			color: #fff;
-			text-align: center;
-
-			filter:Alpha(opacity=60);
-    	    -moz-opacity:0.6;
-      		-khtml-opacity: 0.6;
-      		opacity:0.6;
-      		border-radius: 8px;
+		else {
+			featuresElem.className = "show_div";
+			arrowElem.innerHTML = "v";
 		}
-
-		#main_div a
-		{
-			color: #fff;
-
-			filter:Alpha(opacity=99);
-    	    -moz-opacity:0.99;
-      		-khtml-opacity: 0.99;
-      		opacity:0.99;
-		}
-
-
-		#main_table
-		{
-
-			width: 100%;
-			height: 100%;
-		}
-
-		#main_table h1 {
-			margin: 0px;
-			padding: 0px;
-		}
-		
-		#main_table p {
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-
-		#main_table span {
-			margin-right: 5px;
-		}
-	</style>
-
+	}
+</script>
+	
 </head>
 
 <body>
-	<div id="main_div">
-		<table id="main_table" border="0">
-			<tr>
-				<td>
-					<h1>COMING SOON...</h1>
-					<p>We are currently developing an all-new design.</p>
-					<p>
-						<br/>
-						<br/>
-						<h1>Hello paint for mac. ok.</h1>
-					</p>
+	<div class="container">
+		<div class="fixed_header_container">
+			<div class="header_contents_container">
+				<div class="header_left">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<img id="header_app_logo" src="appres/icon64.png" alt="Paint X Logo" />
+							</td>
+							
+							<td>
+								<div id="header_app_spacing"></div>
+							</td>
+							
+							<td>
+								<p id="header_app_name">Paint X<span> for Mac</span></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- download and buy -->
+				<div class="header_right">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<a id="header_download_button" href="https://dl.devmate.com/com.macinsightsoft.paintx/PaintX.dmg">Free Download</a>
+							</td>
+							
+							<td>
+								<a id="header_buy_button" href="https://pay.paddle.com/checkout/547748">Buy Now</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_container">
+			<!-- intro section -->
+			<div class="item_intro_container">
+				<div class="item_contents_container">
+					<table id="intro_main_table" cellpadding="0" cellspacing="0">
+						<tr>
+							<td style="width: 36%;">
+								<!-- big app logo -->
+								<img id="intro_app_logo" src="appres/icon300.png" alt="Paint X App Logo" />
+							</td>
+							<td>
+								<!-- intro texts: App Name, subtitle, app description, download button. -->
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td><p id="intro_app_name">Paint X <span>for Mac</span></p></td>
+									</tr>
+									
+									<tr>
+										<td><p id="intro_app_subtitle">The highest rated Microsoft<span class="trade_mark">®</span> Paint replacement app for your Mac<span class="trade_mark">®</span></p></td>
+									</tr>
+									
+									<tr>
+										<td><p id="intro_app_desc">You can use Paint X like a digital sketchpad to draw, color, edit pictures, make pictures &amp; creative projects, or to add text and designs to other pictures, such as those taken with your digital camera. The realistic digital "brushes" will bring your pictures to life in shades of watercolor, crayon, calligraphy, etc.</p></td>
+									</tr>
+									
+									<tr>
+										<td>
+											<table cellpadding="0" cellspacing="0">
+												<tr>
+													<td>
+														<a id="intro_download_button" href="https://dl.devmate.com/com.macinsightsoft.paintx/PaintX.dmg">Free Download</a>
+													</td>
+
+													<td>
+														<a id="intro_buy_button" href="https://pay.paddle.com/checkout/547748">Buy Now</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+								
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+				
+			<!-- detail item1 -->
+			<div class="item_container">
+				<div class="item_contents_container">
+					<!-- header -->
+					<div class="detail_item_header_container">
+						<p>Paint, Draw, Color, Sketch, and Edit Pictures with Ease</p>
+					</div>
+
+					<!-- subtitle -->
+					<div class="detail_item_subtitle_container">
+						<p>You can use Paint X to sketch an idea, draw a diagram, illustrate a concept, or paint a picture. If you've used Microsoft<span class="trade_mark">®</span> Paint before, you'll find that Paint X is as simple to use as Paint, and has additional really useful features.</p>
+					</div>
+
+					<!-- image -->
+					<div class="detail_item_image_container">
+						<img class="detail_item_screenshot" src="appres/ss1.jpg" alt="Paint X Screenshot 1" />
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- detail item 2 -->
+			<div class="item_alt_container">
+				<div class="item_contents_container">
+					<!-- header -->
+					<div class="detail_item_header_container">
+						<p>150+ Built-in Realistic Digital Brushes</p>
+					</div>
+
+					<!-- subtitle -->
+					<div class="detail_item_subtitle_container">
+						<!-- <p>Over 150 built-in brushes: DNA brush, Calligraphy brush, Blur brush, Ink brush and so on.</p> -->
+						<p>Packed with an ultimate fast paint engine, professional-grade perspective paint tool lets you focus on drawing.</p>
+					</div>
+
+					<!-- image -->
+					<div class="detail_item_image_container">
+						<img class="detail_item_screenshot" src="appres/ss2.jpg" alt="Paint X Screenshot 2" />
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- detail item3 -->
+			<div class="item_container">
+				<div class="item_contents_container">
+					<!-- header -->
+					<div class="detail_item_header_container">
+						<p>Add Text to Your Pictures</p>
+					</div>
+
+					<!-- subtitle -->
+					<div class="detail_item_subtitle_container">
+						<p>You can use Text tool in Paint X to put text on pictures without any of the hassle.</p>
+					</div>
+
+					<!-- image -->
+					<div class="detail_item_image_container">
+						<img class="detail_item_screenshot" src="appres/ss3.jpg" alt="Paint X Screenshot 3" />
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- detail item 4 -->
+			<div class="item_alt_container">
+				<div class="item_contents_container">
+					<!-- header -->
+					<div class="detail_item_header_container">
+						<p>25 Ready-made Shapes</p>
+					</div>
+
+					<!-- subtitle -->
+					<div class="detail_item_subtitle_container">
+						<p>Included Shapes: Line, Curve, Oval, Five-point star, Heart, Cloud, Smile and so on.</p>
+					</div>
+
+					<!-- image -->
+					<div class="detail_item_image_container">
+						<img class="detail_item_screenshot" src="appres/ss4.jpg" alt="Paint X Screenshot 4" />
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- SEE ALL FEATURES -->
+			<div class="item_alt_container">
+				<div class="item_all_features_container">
+					
+					<!-- <img id="all_features_icon" src="img/features.png" alt="All Features" /> -->
+					
+					<button id="all_features_button" type="button" onclick="toggleAllFeaturesContainer();">Complete feature list <span id="all_features_arrow">&gt;</span></button>
+					
+					<div id="all_features_contents_container" class="hide_div">
+						<!-- all-features goes here -->
+						
+						<h4 id="efficient-tools">Efficient tools:</h4>
+						<ul>
+						<li>Pencil tool, Eraser tool, Airbrush tool, Fill tool, Text tool, Color picker tool, Rectangle selection tool, Free-form selection tool </li>
+						<li>Over 150 built-in paintbrushes: DNA brush, Calligraphy brush, Blur brush, Ink brush and so on </li>
+						<li>25 ready-made shapes: Line, Curve, Oval, Five-point star, Heart, Cloud, Smile and so on </li>
+						</ul>
+						<h4 id="drawing-functionality">Drawing functionality:</h4>
+						<ul>
+						<li>Rotate/Resize shapes or selection freely</li>
+						<li>Flip the image horizontal/vertical</li>
+						<li>Crop image by selection</li>
+						<li>Paint with a transparency color anywhere</li>
+						<li>Stroke/Fill shapes with respective colors </li>
+						<li>Select the most recently used colors from the builtin colorpanel</li>
+						<li>Cut/Copy/Paste</li>
+						<li>Paste from an image file</li>
+						</ul>
+						<h4 id="other-features">Other features:</h4>
+						<ul>
+						<li>Canvas/image size is adjustable</li>
+						<li>Support Drag and drop operation</li>
+						<li>Support Zoom In/Out feature</li>
+						<li>The maximum undo/redo times is adjustable</li>
+						<li>Support multiple image windows opened at the same time</li>
+						<li>Support printing</li>
+						<li>Support file formats: png, tiff, bmp, jpeg, gif</li>
+						</ul>
 
 					
-
-				</td>
-			</tr>
-		</table>
-		
-		
-	</div>
-
+						<!-- end of all-features -->	
+					</div>
+				</div>
+			</div>
+			
+			<!-- footer detail item -->
+			<div class="item_footer_container">
+				<div class="footer_contents_container">
+					
+					<!-- about area -->
+					<div class="footer_about_container">
+						<table cellpadding="0" cellspacing="10">
+							<tr>
+								<td>
+									<p>Contact Us: <a class="footer_link_button" href="mailto:hnbsoft@outlook.com">hnbsoft@outlook.com</a></p>
+								</td>
+								
+								<td>
+									<p><a class="footer_link_button" href="pp.html" target="_blank">Privacy Policy</a></p>
+								</td>
+								
+								<td>
+									<p id="footer_copyright_item">© 2019 Paint X Team</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<!-- registered description -->
+					<div class="footer_reg_desc_container">
+						<p>
+							Copyright © 2019 Paint X Team. All Rights Reserved. Apple, the Apple logo, and Mac are registered trademarks or trademarks of Apple Inc. in the U.S. and/or other countries. Microsoft, Windows, and Paint are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. Paint X Team has no affiliation with Microsoft Corporation or the Microsoft Paint software application.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div> <!-- main container -->
+	</div> <!-- container -->
+	
+	<!-- Release Main Page V0.0.1 (v2019.02.12 6.40 PM) -->
 </body>
-	
-	
+
 </html>

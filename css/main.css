@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* css document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'myriad-pro', sans-serif, Verdana, times, serif, courier, source-sans-pro, 'Arial Black';
+	font-style: normal;
+	/*font-weight: 200;*/
+	background-color: #ffffff; /* #e0e0e0; */
+	margin: 0px;
+	padding: 0px;
+	min-width: 1024px;
+}
+
+/* common properties */
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.trade_mark
+{
+	vertical-align: super;
+	font-size: 50%;
+	font-weight: 300;
+}
+
+/* containers */
+.container
+{
+	width: 100%;
+}
+
+.fixed_header_container
+{
+	width: 100%;
+	position: fixed;
+	height: 56px;
+	left: 0px;
+	top: 0px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #efefef;
+	
+	/* border: 1px solid red; */
+}
+
+.header_contents_container
+{
+	margin: 0 auto;
+	width: 70%;
+	height: 100%;
+}
+
+.header_left
+{
+	float: left;
+	margin-top: 12px;
+	/* border: 1px solid red; */
+}
+
+
+#header_app_logo
+{
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+#header_app_spacing {
+	width: 20px;
+	height: 1px;
+}
+
+#header_app_name
+{
+	color: #121212;
+	font-weight: bold;
+	font-size: large;
+	/* border: 1px solid green; */
+}
+
+#header_app_name span
+{
+	color: #464646;
+	font-weight: 300;
+}
+
+.header_right
+{
+	float: right;
+	margin-top: 12px;
+	font-size: small;
+}
+
+/* download buttons */
+#header_download_button
+{
+	display: block;
+	width: 148px;
+	height: 32px;
+	line-height: 32px;	/* vertical align impl */
+	color: #ffffff;
+	background-color: #20c060;
+	text-align: center;
+	border-radius: 6px;
+}
+
+#header_download_button:hover {
+	background-color: #25d585;
+}
+
+
+#intro_download_button
+{
+	display: block;
+	width: 194px;
+	height: 48px;
+	line-height: 48px;	/* vertical align impl */
+	color: #ffffff;
+	background-color: #20c060;
+	text-align: center;
+	border-radius: 8px;
+}
+
+#intro_download_button:hover {
+	background-color: #25d585;
+}
+
+/* buy buttons */
+#header_buy_button
+{
+	display: block;
+	box-sizing: border-box;
+	width: 110px;
+	height: 32px;
+	line-height: 28px;	/* vertical align impl: height - 2*border-width (because of box-sizing is border-box) */
+	margin-left: 20px;
+	color: #121212;
+	background-color: #ffffff;
+	border: 2px solid #cbcbcb;
+	text-align: center;
+	border-radius: 6px;
+}
+
+
+#header_buy_button:hover {
+	border-color: #1373e6;
+}
+
+
+#intro_buy_button
+{
+	display: block;
+	box-sizing: border-box;
+	width: 140px;
+	height: 48px;
+	line-height: 44px;	/* vertical align impl: height - 2*border-width (because of box-sizing is border-box) */
+	margin-left: 40px;
+	color: #121212;
+	background-color: #efefef;
+	border: 2px solid #cbcbcb;
+	text-align: center;
+	border-radius: 8px;
+}
+
+#intro_buy_button:hover {
+	background-color: #ffffff;
+	border-color: #1373e6;
+}
+
+/* all the text or image contents are in a  item_contents_container. */
+.item_contents_container
+{
+	width: 1024px;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+	color: #121212;
+	/* border: 1px dashed blue; */
+}
+
+/* main container */
+.main_container
+{	
+	margin-top: 56px;
+	width: 100%;
+}
+
+/* intro */
+.item_intro_container
+{
+	width: 100%;
+	height: 560px;
+	background-image: url("../img/infobg.jpg");
+	background-color: #505050;
+	background-size: cover;
+}
+
+#intro_main_table {
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	/* border: 4px solid yellow; */
+}
+
+#intro_app_logo {
+	width: 288px;
+	height: 288px;
+}
+
+#intro_app_name
+{
+	font-size: 66px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+#intro_app_name span
+{
+	color: #dcdcdc;
+	font-weight: 300;
+}
+
+#intro_app_subtitle
+{
+	color: #f6f6f6;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+#intro_app_desc
+{
+	color: #f6f6f6;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+/* common item section */
+.item_container
+{
+	width: 100%;
+	background-color: #fafafa;
+}
+
+.item_alt_container
+{
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.item_footer_container
+{
+	width: 100%;
+	background-color: #323232;
+}
+
+/* detail items */
+/*
+.detail_item_table
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+}
+*/
+
+.detail_item_header_container
+{
+	width: 85%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-weight: bold;
+	font-size: xx-large;
+	text-align: center;
+	/* border: 1px solid red; */
+}
+
+.detail_item_subtitle_container
+{
+	width: 85%;
+	margin-top: 5px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-weight: normal;
+	font-size: medium;
+	text-align: center;
+	line-height: 1.5;
+	/* border: 1px solid green; */
+}
+
+.detail_item_image_container
+{
+	width: 100%;
+	text-align: center;
+}
+
+.detail_item_screenshot
+{
+	/* border: 5px solid blue; */
+}
+
+/* all features section */
+.item_all_features_container
+{
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 60px;
+}
+
+#all_features_arrow
+{
+	/* vertical-align: sub; */
+	font-size: 80%;
+	font-weight: 300;
+}
+
+#all_features_button
+{
+	
+	display: block;
+	margin: 0 auto;
+	padding: 5px 5px 5px 45px;
+	text-align: center;
+	font-size: xx-large;
+	color: #0066cc;
+	
+	/*
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #404040;
+	color: #404040;
+	*/
+	background-image: url("../img/features.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 36px 36px;
+	
+	border-style: none;
+	border-width: 0px;
+	background-color: transparent;
+	outline-style: none;
+	outline-width: 0px;
+}
+
+#all_features_button:hover {
+	cursor:pointer;
+	color: #359aea;
+	/* background-color: #404040; */
+}
+
+/* All features contents here. */
+#all_features_contents_container
+{
+	padding-left: 18%;
+	padding-right: 10%;
+	line-height: 1.5;
+	/* border: 3px solid green; */
+}
+
+#all_features_contents_container ul {
+	padding-left: 1em;
+}
+
+#all_features_contents_container h1, h2, h3, h4, h5, h6 {
+	margin-top: 1em;
+}
+
+/* Cannot change the following two classes name. */
+.hide_div {
+	display: none;
+}
+
+.show_div {
+	display: block;
+}
+
+/* footer */
+.footer_contents_container
+{
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #e6e6e6;
+}
+
+.footer_about_container
+{
+	width: 100%;
+	margin-bottom: 30px;
+	font-size: large;
+}
+
+.footer_about_container table {
+	height: 100%;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+
+.footer_about_container p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.footer_link_button
+{
+	color: #e6e6e6;
+}
+
+.footer_link_button:hover {
+	text-decoration: underline;
+}
+
+#footer_copyright_item
+{
+	display: block;
+}
+
+.footer_reg_desc_container
+{
+	width: 100%;
+	text-align: center;
+	font-size: small;
+}
+
+
+/* used by privacy policy */
+/* pp */
+.pp_container
+{
+	width:1180px;
+	height:100%;
+    margin:0 auto;
+	font-family:Verdana, 'Open Sans', sans-serif, "Helvetica Neue", Arial, Helvetica;
+	line-height: 1.6;
+}
+
+.pp_main
+{
+	width:100%;
+    height:100%;
+	margin-top: 40px;
+    margin-bottom: 40px;    /* The offset to the browser bottom */
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #343434;
+    
+    /* The border stroke */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+	border-radius: 6px;
+	
+	/*
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    */
+	
+    /* background color */
+    background-color:#ffffff;
+}
+
+.pp_main_contents
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pp_main_contents h1
+{
+    text-align: center;
+    margin: 40px;
+}
+
+.pp_main_contents h2
+{
+    font-weight: normal;
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.pp_main_contents h3
+{
+    font-weight: normal;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.pp_main_contents p
+{
+    color: #545454;
+    margin-bottom: 5px;
+}
+
+.pp_main_contents ul
+{
+    margin-left: 2em;
+}
+
