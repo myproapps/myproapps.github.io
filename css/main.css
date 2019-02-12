@@ -243,16 +243,16 @@ a:active {
 #intro_app_subtitle
 {
 	color: #f6f6f6;
-	font-size: 36px;
+	font-size: 32px;
 	margin-bottom: 30px;
 }
 
 #intro_app_desc
 {
 	color: #f6f6f6;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.5;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 /* common item section */
@@ -525,3 +525,4 @@ a:active {
     margin-left: 2em;
 }
 
+/* Release main css v0.0.2 (2019.2.12 7:31 PM) */
