@@ -36,7 +36,7 @@
         -->
         <advance><![CDATA[{
                     "com.hnbsoft.PAUDemoApp": { "enable":1, "embed":4, "width":350, "height":96, "delay":1, "offsetx":0, "offsety":3 },
-                    "com.hnbsoft.macrar": { "enable":0, "customAdDisplayRate":1, "offsetx":0, "offsety":20 }
+                    "com.hnbsoft.macrar": { "enable":1, "customAdDisplayRate":5, "offsetx":0, "offsety":20 }
             }]]></advance>
         
         <!-- 
