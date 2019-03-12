@@ -27,7 +27,7 @@
 	function toggleAllFeaturesContainer()
 	{
 		var arrowElem = document.getElementById('all_features_arrow');
-		var featuresElem = document.getElementById('all_features_contents_container');
+		var featuresElem = document.getElementById('all_features_div');
 		if (featuresElem.className == "show_div") {
 			featuresElem.className = "hide_div";
 			arrowElem.innerHTML = "&gt;";
@@ -94,10 +94,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<table cellpadding="0" cellspacing="0">
 						<tr>
 							<td>
+								<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager-->
 								<a id="header_download_button" href="https://dl.devmate.com/com.macinsightsoft.paintx/PaintX.dmg">Free Download</a>
 							</td>
 							
 							<td>
+								<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager-->
 								<a id="header_buy_button" href="https://pay.paddle.com/checkout/547748" target="_blank">Buy Now</a>
 							</td>
 						</tr>
@@ -136,10 +138,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<table cellpadding="0" cellspacing="0">
 												<tr>
 													<td>
+														<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager-->
 														<a id="intro_download_button" href="https://dl.devmate.com/com.macinsightsoft.paintx/PaintX.dmg">Free Download</a>
 													</td>
 
 													<td>
+														<!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager-->
 														<a id="intro_buy_button" href="https://pay.paddle.com/checkout/547748" target="_blank">Buy Now</a>
 													</td>
 												</tr>
@@ -249,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					<button id="all_features_button" type="button" onclick="toggleAllFeaturesContainer();">Complete feature list <span id="all_features_arrow">&gt;</span></button>
 					
-					<div id="all_features_contents_container" class="hide_div">
+					<div id="all_features_div" class="hide_div"> <!-- MUST NOT CHANGE this id, because it is used in Google Tag Manager-->
 						<!-- all-features goes here -->
 						
 						<h4 id="efficient-tools">Efficient tools:</h4>
