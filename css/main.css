@@ -376,7 +376,7 @@ a:active {
 }
 
 /* All features contents here. */
-#all_features_contents_container
+#all_features_div
 {
 	padding-left: 18%;
 	padding-right: 10%;
@@ -384,11 +384,11 @@ a:active {
 	/* border: 3px solid green; */
 }
 
-#all_features_contents_container ul {
+#all_features_div ul {
 	padding-left: 1em;
 }
 
-#all_features_contents_container h1, h2, h3, h4, h5, h6 {
+#all_features_div h1, h2, h3, h4, h5, h6 {
 	margin-top: 1em;
 }
 
