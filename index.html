@@ -20,24 +20,6 @@
 <!-- css -->
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-
-	
-<!-- Define some functions here. -->
-<script type="text/javascript">
-	function toggleAllFeaturesContainer()
-	{
-		var arrowElem = document.getElementById('all_features_arrow');
-		var featuresElem = document.getElementById('all_features_div');
-		if (featuresElem.className == "show_div") {
-			featuresElem.className = "hide_div";
-			arrowElem.innerHTML = "&gt;";
-		}
-		else {
-			featuresElem.className = "show_div";
-			arrowElem.innerHTML = "v";
-		}
-	}
-</script>
 	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136086675-1"></script>
@@ -56,6 +38,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TBDQXHZ');</script>
 <!-- End Google Tag Manager -->
+
+
+
+
+<!-- Define My Own functions here. -->
+<script type="text/javascript">
+	function toggleAllFeaturesContainer()
+	{
+		var arrowElem = document.getElementById('all_features_arrow');
+		var featuresElem = document.getElementById('all_features_div');
+		if (featuresElem.className == "show_div") {
+			featuresElem.className = "hide_div";
+			arrowElem.innerHTML = "&gt;";
+		}
+		else {
+			featuresElem.className = "show_div";
+			arrowElem.innerHTML = "v";
+		}
+	}
+
+	/* Send some statistic events to GA. */
+	function postBrowserInfo()
+	{
+		// 1. Find the browser name
+		var sBrowser = "Unknown Browser";
+		var sUsrAg = navigator.userAgent;
+		
+		// The order matters here, and this may report false positives for unlisted browsers.
+		if (sUsrAg.indexOf("Firefox") > -1) {
+		  sBrowser = "Mozilla Firefox";
+		  // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
+		} else if (sUsrAg.indexOf("Opera") > -1 || sUsrAg.indexOf("OPR") > -1) {
+		  sBrowser = "Opera";
+		  //"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
+		} else if (sUsrAg.indexOf("Trident") > -1) {
+		  sBrowser = "Microsoft Internet Explorer";
+		  // "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko"
+		} else if (sUsrAg.indexOf("Edge") > -1) {
+		  sBrowser = "Microsoft Edge";
+		  // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+		} else if (sUsrAg.indexOf("Chrome") > -1) {
+		  sBrowser = "Google Chrome or Chromium";
+		  // "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36"
+		} else if (sUsrAg.indexOf("Safari") > -1) {
+		  sBrowser = "Apple Safari";
+		  // "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306"
+		} else {
+		  sBrowser = "unknown browser";
+		}
+		
+		// Post to GA
+		gtag('event', 'UserBrowser', {
+  			'event_category' : 'InfoStats',
+  			'event_label' : sBrowser
+		});
+		
+		
+		
+		// 2. Find the Operating system.
+		var sPlatform = navigator.platform + " OS";
+		
+		// post to GA
+		gtag('event', 'UserOS', {
+  			'event_category' : 'InfoStats',
+  			'event_label' : sPlatform
+		});	
+	}
+
+</script>
+<!-- End of My Own functions -->
+
+
 
 </head>
 
@@ -328,7 +382,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div> <!-- main container -->
 	</div> <!-- container -->
 	
-	<!-- Release Main Page V0.0.3 (v2019.02.21 5.16 PM) -->
+	<!-- Browser Info -->
+	<script>
+		postBrowserInfo();
+	</script>
+	
+	
+	
+	<!-- Release Main Page V0.0.4 (v2019.03.18 11.56 AM) -->
 </body>
 
 </html>
