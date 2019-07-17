@@ -271,7 +271,7 @@
                     <td class="slideshow_item_texts_td">
                         <div class="slideshow_item_texts_box">
                             <a href="https://soleoffice.com"><p id="texts_header" class="pauopenout">SoleOffice</p></a>
-                            <p id="texts_subtitle">100% compatible with Microsoft® Word, Excel, and PowerPoint.</p>
+                            <p id="texts_subtitle">100% compatible with Microsoft<sup>®</sup> Word, Excel, and PowerPoint.</p>
                             <a class="slideshow_item_download" href="https://soleoffice.com"><p id="texts_download" class="pauopenout">Free Download</p></a>
                         </div>
                     </td>
